@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+<!--  -->
+{% block title %}Home{% endblock title %}
+<!--  -->
+{% block content %}
+<div class="jumbotron">
+  <h1 class="display-4">Blog app</h1>
+  <p class="lead">Happy to see you here.</p>
+  <p class="lead">
+    <a
+      class="btn btn-primary btn-lg"
+      href="{% url 'article_list' %}"
+      role="button"
+      >View All Articles</a
+    >
+  </p>
+</div>
+{% endblock content %}
